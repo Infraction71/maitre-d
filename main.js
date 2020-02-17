@@ -12,6 +12,7 @@ function getGrndTotal(){
     //Printing stuff
     document.getElementById("tipOut").innerHTML = "Tip: $" + subTotal*tip;
     document.getElementById("taxOut").innerHTML = "Tax: $" + subTotal*TAX;
-    document.getElementById("grandTotal").innerHTML = "Grand Total: $" + (subTotal + (subTotal*tip) + (subTotal*TAX));
+    let tipValOut = subTotal*tip;
+    document.getElementById("grandTotal").innerHTML = "Grand Total: $" + ((subTotal+(subTotal*TAX))+tipValOut);
     
 }
