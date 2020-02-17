@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Maitre D bill calculator</title>
+        <link rel = "stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <h1>Maitre D</h1><br><hr><br>
+            <main>
+                <div id="pos">
+                    <label>Sub total: </label><input type="number" name="subTotal" placeholder="Sub Total" id="subTotal">
+                </div>
+              
+                  <aside>
+                    <div id="tiprow>"><label>Tip Rate: </label><input type="number" name="tip" placeholder="As a % of 100" id="tip">   </div>
+                  </aside>
+           
+                <article>
+                   <p id = "tipOut" class = "outVal">Tip: </p>
+                    <p id = "taxOut" class = "outVal">Tax: </p>
+                    <p id = "grandTotal" class = "outVal">Grand Total: </p>
+                </article>
+
+                <input type="submit" value="Get Bill" name="totalBTN" onclick="getGrndTotal()">
+                
+            </main>
+            
+       
+    </body>
+</html>
